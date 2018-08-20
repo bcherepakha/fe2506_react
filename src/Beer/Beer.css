@@ -1,0 +1,25 @@
+.beer
+{
+    flex: 0 0 30%;
+    margin: 10px;
+    border: 1px solid #000;
+    overflow: hidden;
+}
+
+.beer--favourite
+{
+    background: yellow;
+}
+
+.beer__image
+{
+    float: left;
+    margin: 10px;
+    max-width: 50%;
+    height: 100px;
+}
+
+.beer__tips
+{
+    padding-right: 10px;
+}
