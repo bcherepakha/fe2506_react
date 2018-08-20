@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import { BrowserRouter as Router, Route, NavLink } from 'react-router-dom';
 
-
+import Loader from './Loader/Loader';
 import SearchForm from './SearchForm/SearchForm';
 import BeerList from './BeerList/BeerList';
 import FavourBeerList from './FavourBeerList/FavourBeerList';
@@ -46,6 +46,7 @@ class App extends Component {
                 <SearchForm/>
                 <Route exact path="/" component={BeerList}/>
                 <Route exact path="/favourite" component={FavourBeerList}/>
+                <Loader/>
             </div>
         </Router>;
     }

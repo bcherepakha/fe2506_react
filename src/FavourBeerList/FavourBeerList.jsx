@@ -1,4 +1,3 @@
-import React from 'react';
 import BeerList from '../BeerList/BeerList';
 import AppStore from '../Flux/AppStore';
 

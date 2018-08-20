@@ -32,5 +32,15 @@ export default {
             eventName: 'REMOVE_BEER_TO_FAVOUR',
             beerId
         });
+    },
+    showLoader: function() {
+        iDispatcher.dispatch({
+            eventName: 'LOADER_SHOW'
+        });
+    },
+    hideLoader: function() {
+        iDispatcher.dispatch({
+            eventName: 'LOADER_HIDE'
+        });
     }
 };
