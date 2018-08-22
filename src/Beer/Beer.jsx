@@ -1,15 +1,17 @@
 import React from 'react';
-import AppActions from '../Flux/AppActions';
+// import AppActions from '../Flux/AppActions';
 
 import './Beer.css';
 
 class Beer extends React.Component {
     addFavour = () => {
-        AppActions.addFavour(this.props.beer.id);
+        // AppActions.addFavour(this.props.beer.id);
+        this.props.addFavour(this.props.beer.id);
     }
 
     removeFavour = () => {
-        AppActions.removeFavour(this.props.beer.id);
+        // AppActions.removeFavour(this.props.beer.id);
+        this.props.removeFavour(this.props.beer.id);
     }
 
     render() {

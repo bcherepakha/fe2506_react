@@ -1,5 +1,3 @@
-import LoaderStore from '../Loader/LoaderStore';
-
 /** Метод fetch – это XMLHttpRequest нового поколения.
  * Он предоставляет улучшенный интерфейс для осуществления запросов к серверу:
  * как по части возможностей и контроля над происходящим,
@@ -23,10 +21,8 @@ import LoaderStore from '../Loader/LoaderStore';
 export default function iFetch(params) {
     const {url, ...options} = params;
 
-    LoaderStore.showLoader();
     return fetch(url, options)
             .then(response => {
-                LoaderStore.hideLoader();
                 return response.json();
             });
 }
